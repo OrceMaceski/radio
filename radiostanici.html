@@ -1,23 +1,71 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <meta charset="utf-8" />
+    <meta content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no" name="viewport">
+    <!-- css -->
+    <link href="css/bootstrap.min.css" rel="stylesheet" media="screen">
+    <link href="css/style.css" rel="stylesheet" media="screen">
+    <link href="color/default.css" rel="stylesheet" media="screen">
+    <script src="js/modernizr.custom.js"></script>
 
     <title>RadioStanici.NET</title>
 </head>
-<body style="background-color:black;color:white;">
+
 <h1 style="text-align:center;">Radio Stanici</h1>
-<div class="row">
-    <div class="col-sm-4" style="background-color:darkblue;">Prva Stanica</div>
-    <div class="col-sm-4" style="background-color:darkblue;">Vtora Stanica</div>
-    <div class="col-sm-4" style="background-color:darkblue;">Treta Stanica</div>
+
+<div class="menu-area">
+    <div id="dl-menu" class="dl-menuwrapper">
+        <button class="dl-trigger">Open Menu</button>
+        <ul class="dl-menu">
+            <li>
+                <a href="#intro">Home</a>
+            </li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#services">Services</a></li>
+            <li><a href="#works">Works</a></li>
+            <li><a href="#contact">Contact</a></li>
+            <li>
+                <a href="#">Sub Menu</a>
+                <ul class="dl-submenu">
+                    <li><a href="#">Sub menu</a></li>
+                    <li><a href="#">Sub menu</a></li>
+                </ul>
+            </li>
+        </ul>
+    </div>
+    <!-- /dl-menuwrapper -->
 </div>
+
+
+<!-- intro area -->
+<div id="intro">
+
+    <div class="intro-text">
+        <div class="container">
+            <div class="row">
+
+
+                <div class="col-md-12">
+
+                    <div class="brand">
+                        <h1><a href="radiostanici.html">Click to Play!</a></h1>
+                        <div class="line-spacer"></div>
+                        <p><span>Radio ###### is now playing!</span></p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
 </div>
+<br>
+<h2>
+<marquee> Radio1 # Radio2 # Radio3 # Radio4</marquee>
+
+</h2>
+
+
 
 </body>
 </html>
