@@ -1,5 +1,6 @@
 <html>
 <head>
+<meta charset="utf-8">
 <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-WskhaSGFgHYWDcbwN70/dfYBj47jz9qbsMId/iRN3ewGhXQFZCSftd1LZCfmhktB" crossorigin="anonymous">
 <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
 <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js" integrity="sha384-smHYKdLADwkXOn1EmN1qk/HfnUcbVRZyYmZ4qpPea6sjB/pTJ0euyQp0Mk8ck+5T" crossorigin="anonymous"></script>
@@ -8,53 +9,54 @@
 <title></title>
 </head>
 <body>
-<div class="center">
-<audio id='player' controls='controls'><source id='audio_mp3' src='' type='audio/mp3'/></audio><br>
-</div>
+	<div class="center">
+		<audio id='player' controls='controls'><source id='audio_mp3' src='' type='audio/mp3'/></audio><br>
+	</div>
 <br>
-<div class="container">
-<div class="row">
 
-	<!-- BLOCK OF THE BOOTSTRAP IMAGE -->
-	<div class="col-sm-3" id="2p">
+<div class="container">
+	<div class="row">
+
+		<!-- BLOCK OF THE BOOTSTRAP IMAGE -->
+		<div class="col-sm-3" id="2p">
 	
-		<img onclick="change('http://antenna5stream.neotel.mk:8000/live32'); return false;" src="https://lh3.googleusercontent.com/As9_o26yya6-46U0Fsep9vC9XU8v4vVYvdaT-Q2hVzOeAqTA4svuI0YUzSwcA_FmplghHaS4=w300" class="rounded-circle" width="150" height="150"/>	
-	</div>
-	<!-- END OF THE BLOCK IMAGE-->
+			<img onclick="change('http://antenna5stream.neotel.mk:8000/live32'); return false;" src="https://lh3.googleusercontent.com/As9_o26yya6-46U0Fsep9vC9XU8v4vVYvdaT-Q2hVzOeAqTA4svuI0YUzSwcA_FmplghHaS4=w300" class="rounded-circle" width="150" height="150"/>
+		</div>
+		<!-- END OF THE BLOCK IMAGE-->
 	
-	<!-- BLOCK OF THE BOOTSTRAP IMAGE -->
-	<div class="col-sm-3" id="3p">
+		<!-- BLOCK OF THE BOOTSTRAP IMAGE -->
+		<div class="col-sm-3" id="3p">
 		
-		<img onclick="change('http://radio.one.mk:8000/city.mp3'); return false;" src="https://i.ytimg.com/vi/PlQ05KrqKz0/hqdefault.jpg" class="rounded-circle" width="150" height="150"/>			
-	</div>	
-	<!-- END OF THE BLOCK IMAGE-->
+			<img onclick="change('http://radio.one.mk:8000/city.mp3'); return false;" src="https://i.ytimg.com/vi/PlQ05KrqKz0/hqdefault.jpg" class="rounded-circle" width="150" height="150"/>
+		</div>
+		<!-- END OF THE BLOCK IMAGE-->
 	
-	<!-- BLOCK OF THE BOOTSTRAP IMAGE -->
-	<div class="col-sm-3" id="2p">
+		<!-- BLOCK OF THE BOOTSTRAP IMAGE -->
+		<div class="col-sm-3" id="2p">
 	
-		<img onclick="change('http://antenna5stream.neotel.mk:8000/live32'); return false;" src="https://lh3.googleusercontent.com/As9_o26yya6-46U0Fsep9vC9XU8v4vVYvdaT-Q2hVzOeAqTA4svuI0YUzSwcA_FmplghHaS4=w300" class="rounded-circle" width="150" height="150"/>	
-	</div>
-	<!-- END OF THE BLOCK IMAGE-->
+			<img onclick="change('http://antenna5stream.neotel.mk:8000/live32'); return false;" src="https://lh3.googleusercontent.com/As9_o26yya6-46U0Fsep9vC9XU8v4vVYvdaT-Q2hVzOeAqTA4svuI0YUzSwcA_FmplghHaS4=w300" class="rounded-circle" width="150" height="150"/>
+		</div>
+		<!-- END OF THE BLOCK IMAGE-->
 	
-	<!-- BLOCK OF THE BOOTSTRAP IMAGE -->
-	<div class="col-sm-3" id="3p">
+		<!-- BLOCK OF THE BOOTSTRAP IMAGE -->
+		<div class="col-sm-3" id="3p">
 		
-		<img onclick="change('http://radio.one.mk:8000/city.mp3'); return false;" src="https://i.ytimg.com/vi/PlQ05KrqKz0/hqdefault.jpg" class="rounded-circle" width="150" height="150"/>			
-	</div>	
+			<img onclick="change('http://radio.one.mk:8000/city.mp3'); return false;" src="https://i.ytimg.com/vi/PlQ05KrqKz0/hqdefault.jpg" class="rounded-circle" width="150" height="150"/>
+		</div>
 	<!-- END OF THE BLOCK IMAGE-->
+	</div>
 </div>
 
 <script>
 function change(sourceUrl) {
     var audio = $("#player");      
     $("#audio_mp3").attr("src", sourceUrl);
-    /****************/
-    audio[0].pause();
-    audio[0].load();//suspends and restores all audio element
 
-    //audio[0].play(); 
+    audio[0].pause();
+    audio[0].load();
+
     audio[0].oncanplaythrough = audio[0].play();
-    /****************/
+
 }
 </script>
 
