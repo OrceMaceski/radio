@@ -1,0 +1,27 @@
+#player{
+	width: 300px;
+}
+	.center {
+		margin: 20px 20px 20px;
+		text-align: center;
+		width: 100%;
+		border: 1px solid red;
+		padding: 10px;
+	}
+
+	.main-box {
+		margin: 20px 20px 20px;
+		text-align: center;
+		width: 100%;
+		border: 1px solid red;
+		padding: 20px;
+	}
+
+img {
+	padding: 7px;
+}
+
+img:hover {
+	box-shadow: 0 0 2px 4px rgba(0, 0, 0, 0.9);
+}
+

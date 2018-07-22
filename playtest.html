@@ -1,73 +1,206 @@
+<!DOCTYPE html>
 <html>
 <head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
 <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-WskhaSGFgHYWDcbwN70/dfYBj47jz9qbsMId/iRN3ewGhXQFZCSftd1LZCfmhktB" crossorigin="anonymous">
-<style>
-	#player{
-		
-		width: 300px;
-		
-		}
-		
-	.center {
-    margin: auto;
-	text-align: center;
-    width: 60%;
-    border: 3px solid #73AD21;
-    padding: 10px;
-</style>
-<title></title>
-</head>
-<body>
-<div class="center">
-<audio id='player' controls='controls'><source id='audio_mp3' src='' type='audio/mp3'/></audio><br>
-</div>
-<br>
-<div class="container">
-<div class="row">
-
-	<!-- BLOCK OF THE BOOTSTRAP IMAGE -->
-	<div class="col-sm-3" id="2p">
-	
-		<img onclick="change('http://antenna5stream.neotel.mk:8000/live32'); return false;" src="https://lh3.googleusercontent.com/As9_o26yya6-46U0Fsep9vC9XU8v4vVYvdaT-Q2hVzOeAqTA4svuI0YUzSwcA_FmplghHaS4=w300" class="rounded-circle" width="150" height="150"/>	
-	</div>
-	<!-- END OF THE BLOCK IMAGE-->
-	
-	<!-- BLOCK OF THE BOOTSTRAP IMAGE -->
-	<div class="col-sm-3" id="3p">
-		
-		<img onclick="change('http://radio.one.mk:8000/city.mp3'); return false;" src="https://i.ytimg.com/vi/PlQ05KrqKz0/hqdefault.jpg" class="rounded-circle" width="150" height="150"/>			
-	</div>	
-	<!-- END OF THE BLOCK IMAGE-->
-	
-	<!-- BLOCK OF THE BOOTSTRAP IMAGE -->
-	<div class="col-sm-3" id="2p">
-	
-		<img onclick="change('http://antenna5stream.neotel.mk:8000/live32'); return false;" src="https://lh3.googleusercontent.com/As9_o26yya6-46U0Fsep9vC9XU8v4vVYvdaT-Q2hVzOeAqTA4svuI0YUzSwcA_FmplghHaS4=w300" class="rounded-circle" width="150" height="150"/>	
-	</div>
-	<!-- END OF THE BLOCK IMAGE-->
-	
-	<!-- BLOCK OF THE BOOTSTRAP IMAGE -->
-	<div class="col-sm-3" id="3p">
-		
-		<img onclick="change('http://radio.one.mk:8000/city.mp3'); return false;" src="https://i.ytimg.com/vi/PlQ05KrqKz0/hqdefault.jpg" class="rounded-circle" width="150" height="150"/>			
-	</div>	
-	<!-- END OF THE BLOCK IMAGE-->
-</div>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
 <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js" integrity="sha384-smHYKdLADwkXOn1EmN1qk/HfnUcbVRZyYmZ4qpPea6sjB/pTJ0euyQp0Mk8ck+5T" crossorigin="anonymous"></script>
+<link rel="stylesheet" type="text/css" href="css/custom.css">
+<script src="js/player.js"></script>
+
+<title>Makedonski Radio Stanici</title>
+
+</head>
+<body style="height:1000px">
+
+<!--Header-->
+<nav class="navbar navbar-expand-sm bg-primary navbar-dark fixed-top">
+
+	<a class="navbar-brand" href="#"><img src="img/logo.jpg" class="rounded" width="40" height="40" style="padding: 1px; box-shadow:none"/></a>
+	<ul class="navbar-nav mr-auto">
+		<li class="nav-item">
+			<a class="nav-link" href="http://www.radiostanici.com/">Home</a>
+		</li>
+		<li class="nav-item">
+			<a class="nav-link" href="contact.html">Contact</a>
+		</li>
+		<li class="nav-item">
+			<a class="nav-link" href="http://www.tvstanici.net/">Live TV</a>
+		</li>
+	</ul>
+
+</nav>
+<!--End of Header-->
+
+<!-- Player-->
+	<div class="container-fluid" style="margin-top:120px">
+		<div class="container">
+			<div class="center">
+				<audio id='player' controls='controls'><source id='audio_mp3' src='' type='audio/mp3'/></audio>
+
+			</div>
+		</div>
+
+	</div>
+<!-- End of Player -->
+
+
+
+<div class="container h-100">
+	<div class="main-box">
+		<div class="row h-100 justify-content-center align-items-center">
+
+		<!-- BLOCK OF THE BOOTSTRAP IMAGE -->
+			<img onclick="change('http://antenna5stream.neotel.mk:8000/live32'); return false;" src="img/antenna5.jpg" class="rounded-circle" width="100" height="100"/>
+		<!-- END OF THE BLOCK IMAGE-->
+
+		<!-- BLOCK OF THE BOOTSTRAP IMAGE -->
+			<img onclick="change('http://radio.one.mk:8000/city.mp3'); return false;" src="img/cityradio.jpg" class="rounded-circle" width="100" height="100"/>
+		<!-- END OF THE BLOCK IMAGE-->
+	
+		<!-- BLOCK OF THE BOOTSTRAP IMAGE -->
+			<img onclick="change('http://94.23.62.189:6064/;*.mp3'); return false;" src="img/metropolis.jpg" class="rounded-circle" width="100" height="100"/>
+		<!-- END OF THE BLOCK IMAGE-->
+	
+		<!-- BLOCK OF THE BOOTSTRAP IMAGE -->
+			<img onclick="change('http://176.9.117.123:9996/;stream/1'); return false;" src="img/clubfm.png" class="rounded-circle" width="100" height="100"/>
+		<!-- END OF THE BLOCK IMAGE-->
+
+		<!-- BLOCK OF THE BOOTSTRAP IMAGE -->
+			<img onclick="change('http://217.16.69.17:8000/jazz.mp3'); return false;" src="img/jazz.jpg" class="rounded-circle" width="100" height="100"/>
+		<!-- END OF THE BLOCK IMAGE-->
+
+		<!-- BLOCK OF THE BOOTSTRAP IMAGE -->
+			<img onclick="change('http://kanal77.mk:8088/live.mp3'); return false;" src="img/kanal77.gif" class="rounded-circle" width="100" height="100"/>
+		<!-- END OF THE BLOCK IMAGE-->
+
+		<!-- BLOCK OF THE BOOTSTRAP IMAGE -->
+			<img onclick="change('http://50.7.129.122:8497/;stream.mp3'); return false;" src="img/fortuna.jpg" class="rounded-circle" width="100" height="100"/>
+		<!-- END OF THE BLOCK IMAGE-->
+
+		<!-- BLOCK OF THE BOOTSTRAP IMAGE -->
+			<img onclick="change('http://s1.skyradio.com.mk:8002/;?type=http&nocache=139835'); return false;" src="img/skyradio.png" class="rounded-circle" width="100" height="100"/>
+		<!-- END OF THE BLOCK IMAGE-->
+
+		<!-- BLOCK OF THE BOOTSTRAP IMAGE -->
+			<img onclick="change('http://88.85.99.2/live-128.mp3'); return false;" src="img/bubamara.png" class="rounded-circle" width="100" height="100"/>
+		<!-- END OF THE BLOCK IMAGE-->
+
+		<!-- BLOCK OF THE BOOTSTRAP IMAGE -->
+			<img onclick="change('http://217.16.69.17:8000/ravel.mp3.m3u'); return false;" src="img/ravel.jpg" class="rounded-circle" width="100" height="100"/>
+		<!-- END OF THE BLOCK IMAGE-->
+
+			<!-- BLOCK OF THE BOOTSTRAP IMAGE -->
+			<img onclick="change('http://89.205.127.244:8002/;stream.nsv'); return false;" src="img/folkradio.jpg" class="rounded-circle" width="100" height="100"/>
+			<!-- END OF THE BLOCK IMAGE-->
+
+			<!-- BLOCK OF THE BOOTSTRAP IMAGE -->
+			<img onclick="change('http://checast.com/listen/mk/sportsko903/32.aac'); return false;" src="img/sportskoradio.gif" class="rounded-circle" width="100" height="100"/>
+			<!-- END OF THE BLOCK IMAGE-->
+
+			<!-- BLOCK OF THE BOOTSTRAP IMAGE -->
+			<img onclick="change('http://ss1.mk.checast.com:21314/stream'); return false;" src="img/liferadio.jpg" class="rounded-circle" width="100" height="100"/>
+			<!-- END OF THE BLOCK IMAGE-->
+
+			<!-- BLOCK OF THE BOOTSTRAP IMAGE -->
+			<img onclick="change('http://194.149.158.125:8888/stream.ogg'); return false;" src="img/uklofm.jpg" class="rounded-circle" width="100" height="100"/>
+			<!-- END OF THE BLOCK IMAGE-->
+
+			<!-- BLOCK OF THE BOOTSTRAP IMAGE -->
+			<img onclick="change('http://217.115.140.23:8001/radio2'); return false;" src="img/radio2.png" class="rounded-circle" width="100" height="100"/>
+			<!-- END OF THE BLOCK IMAGE-->
+
+			<!-- BLOCK OF THE BOOTSTRAP IMAGE -->
+			<img onclick="change('http://vod-c55.interspace.org/channel_abr/47/playlist.m3u8'); return false;" src="img/mrt1.png" class="rounded-circle" width="100" height="100"/>
+			<!-- END OF THE BLOCK IMAGE-->
+
+			<!-- BLOCK OF THE BOOTSTRAP IMAGE -->
+			<img onclick="change('http://95.128.184.30:8001/;stream.nsv'); return false;" src="img/slobodnamakedonija.jpg" class="rounded-circle" width="100" height="100"/>
+			<!-- END OF THE BLOCK IMAGE-->
+
+			<!-- BLOCK OF THE BOOTSTRAP IMAGE -->
+			<img onclick="change('http://radiomof.kajgana.net:8020/;*.mp3'); return false;" src="img/radiomof.png" class="rounded-circle" width="100" height="100"/>
+			<!-- END OF THE BLOCK IMAGE-->
+
+			<!-- BLOCK OF THE BOOTSTRAP IMAGE -->
+			<img onclick="change('http://87.117.197.33:19467/;*.mp3'); return false;" src="img/radiorosa.jpg" class="rounded-circle" width="100" height="100"/>
+			<!-- END OF THE BLOCK IMAGE-->
+
+			<!-- BLOCK OF THE BOOTSTRAP IMAGE -->
+			<img onclick="change('http://ss1.mk.checast.com:21294/48.aac?1461657830260.aac'); return false;" src="img/aleksandarmakedonski.gif" class="rounded-circle" width="100" height="100"/>
+			<!-- END OF THE BLOCK IMAGE-->
+
+			<!-- BLOCK OF THE BOOTSTRAP IMAGE -->
+			<img onclick="change('http://5.35.251.86:18002/;'); return false;" src="img/radiomeff.png" class="rounded-circle" width="100" height="100"/>
+			<!-- END OF THE BLOCK IMAGE-->
+
+			<!-- BLOCK OF THE BOOTSTRAP IMAGE -->
+			<img onclick="change('http://ss1.mk.checast.com:21290/live'); return false;" src="img/zonam1.jpg" class="rounded-circle" width="100" height="100"/>
+			<!-- END OF THE BLOCK IMAGE-->
+
+			<!-- BLOCK OF THE BOOTSTRAP IMAGE -->
+			<img onclick="change('http://78.138.98.221:8000/;'); return false;" src="img/radiokavadarci.jpg" class="rounded-circle" width="100" height="100"/>
+			<!-- END OF THE BLOCK IMAGE-->
+
+			<!-- BLOCK OF THE BOOTSTRAP IMAGE -->
+			<img onclick="change('http://radio105.makbots.com:21010/;stream.nsv'); return false;" src="img/radio105.png" class="rounded-circle" width="100" height="100"/>
+			<!-- END OF THE BLOCK IMAGE-->
+
+			<!-- BLOCK OF THE BOOTSTRAP IMAGE -->
+			<img onclick="change('http://radiostream.neotel.mk/kanal103'); return false;" src="img/kanal103.png" class="rounded-circle" width="100" height="100"/>
+			<!-- END OF THE BLOCK IMAGE-->
+
+			<!-- BLOCK OF THE BOOTSTRAP IMAGE -->
+			<img onclick="change('http://80.77.157.10:8000/;stream.nsv'); return false;" src="img/radiobravo.jpg" class="rounded-circle" width="100" height="100"/>
+			<!-- END OF THE BLOCK IMAGE-->
+
+			<!-- BLOCK OF THE BOOTSTRAP IMAGE -->
+			<img onclick="change('http://88.85.99.43:8000/hitportal'); return false;" src="img/radiohit.JPG" class="rounded-circle" width="100" height="100"/>
+			<!-- END OF THE BLOCK IMAGE-->
+
+			<!-- BLOCK OF THE BOOTSTRAP IMAGE -->
+			<img onclick="change('http://dreamsiteradiocp.com:8118/stream.mp3'); return false;" src="img/radiomaria.jpg" class="rounded-circle" width="100" height="100"/>
+			<!-- END OF THE BLOCK IMAGE-->
+
+			<!-- BLOCK OF THE BOOTSTRAP IMAGE -->
+			<img onclick="change('http://eu4.fastcast4u.com:5724/1'); return false;" src="img/starradio.jpg" class="rounded-circle" width="100" height="100"/>
+			<!-- END OF THE BLOCK IMAGE-->
+
+			<!-- BLOCK OF THE BOOTSTRAP IMAGE -->
+			<img onclick="change('http://77.28.99.188:8000/;'); return false;" src="img/bockastation.jpg" class="rounded-circle" width="100" height="100"/>
+			<!-- END OF THE BLOCK IMAGE-->
+
+		</div>
+	</div>
+</div>
+
+<!--Footer-->
+<nav class="navbar navbar-expand-sm bg-primary navbar-dark fixed-bottom">
+	<ul class="navbar-nav mx-auto">
+		<li class="nav-item">
+			<a class="nav-link" href="http://www.radiostanici.com/">www.radiostanici.com</a>
+		</li>
+		<li class="nav-item">
+			<a class="nav-link" href="/policy">Privacy</a>
+		</li>
+	</ul>
+</nav>
+<!-- End of Footer -->
+
+<!--
 <script>
 function change(sourceUrl) {
     var audio = $("#player");      
     $("#audio_mp3").attr("src", sourceUrl);
-    /****************/
+
     audio[0].pause();
-    audio[0].load();//suspends and restores all audio element
+    audio[0].load();
 
-    //audio[0].play(); 
     audio[0].oncanplaythrough = audio[0].play();
-    /****************/
-}
 
+}
 </script>
+-->
 </body>
 </html>
